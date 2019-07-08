@@ -1,0 +1,7 @@
+plasma-applet-places-widget (1.3+lliurex1.0) bionic; urgency=low
+
+  * Master tag: f481ef948f16a72c15c5268d67af22294be093ef
+  * Add settings to hide timeline and search items
+  * Hide places with urls beginning with 'kdeconnect' or 'mtp' when devices should be hidden
+
+ -- Enrique Medina Gremaldos <quiqueiii@gmail.com>  Mon, 08 Jul 2019 12:18:18 +0200
