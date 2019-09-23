@@ -49,6 +49,7 @@ Item {
         }
 
         CheckBox {
+            visible: false
             id: showSearches
             text: i18n('Show searches')
             Layout.columnSpan: 2

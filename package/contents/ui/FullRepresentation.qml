@@ -72,7 +72,9 @@ Item {
         id: placesSearchesFilterModel
         sourceModel: placesTimelineFilterModel
         filterRole: 'url'
-        filterRegExp: showSearches ? '' : '^(?!search).+'
+        //filterRegExp: showSearches ? '' : '^(?!search).+'
+        // disabled search engine as Dolphin does not handle it right now
+        filterRegExp: '^(?!search).+'
     }
 
     PlasmaExtras.ScrollArea {
