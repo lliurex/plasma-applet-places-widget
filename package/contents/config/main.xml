@@ -16,7 +16,7 @@
             <default>true</default>
         </entry>
         <entry name="showSearches" type="bool">
-            <default>true</default>
+            <default>false</default>
         </entry>
         <entry name="widgetWidth" type="int">
             <default>250</default>
