@@ -65,7 +65,7 @@ Item {
         id: placesTimelineFilterModel
         sourceModel: placesDeviceUrlFilterModel
         filterRole: 'url'
-        filterRegExp: showTimeline ? '' : '^(?!timeline).+'
+        filterRegExp: showTimeline ? '' : '^(?!(timeline|recentlyused)).+'
     }
 
     PlasmaCore.SortFilterModel {
@@ -77,6 +77,13 @@ Item {
         filterRegExp: '^(?!search).+'
     }
 
+    PlasmaCore.SortFilterModel {
+        id: placesBlankFilterModel
+        sourceModel: placesSearchesFilterModel
+        filterRole: 'display'
+        filterRegExp: '.+'
+    }
+
     PlasmaExtras.ScrollArea {
         anchors.fill: parent
 
@@ -84,7 +91,7 @@ Item {
             id: listView
             anchors.fill: parent
 
-            model: placesSearchesFilterModel
+            model: placesBlankFilterModel
 
             highlight: PlasmaComponents.Highlight {}
             highlightMoveDuration: 0
