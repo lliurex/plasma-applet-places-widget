@@ -1,0 +1,12 @@
+Source: plasma-applet-places-widget
+Section: misc
+Priority: standard
+Maintainer: Equipo LliureX <lliurex@gva.es>
+Build-Depends: debhelper-compat (= 13), cmake, extra-cmake-modules, libkf6plasma-dev
+Standards-Version: 4.6.0
+
+Package: plasma-applet-places-widget
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, plasma-workspace
+Description: Favorite places plasma widget
+ Favorite places plasma widget
